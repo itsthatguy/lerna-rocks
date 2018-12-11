@@ -12,7 +12,7 @@
 npm install
 $(npm bin)/lerna clean
 cd apps/app-1
-# This `npm install` should be all the further you need to go
+# This next command should explain why not to use `npm install` in app directories
 npm install
 
 #  but just incase...
