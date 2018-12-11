@@ -20,10 +20,8 @@ npm start
 
 ```shell
 npm install
-$(npm bin)/lerna bootstrap
 cd apps/app-1
 npm install is-sorted --save
-rm -rf node_modules/
 
 # This `npm install` should be all the further you need to go
 npm install
