@@ -12,8 +12,6 @@
 npm install
 $(npm bin)/lerna clean
 cd apps/app-1
-npm install is-sorted --save
-
 # This `npm install` should be all the further you need to go
 npm install
 
