@@ -1,0 +1,41 @@
+{
+  "name": "@lerna-rocks/starter-kit",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node_modules/.bin/lerna run build --stream",
+    "prettier": "$(npm bin)/prettier \"apps/{admin,api}/**/*.{ts,tsx}\" --write",
+    "start": "node_modules/.bin/lerna run start --stream",
+    "test": "node_modules/.bin/lerna run test --stream"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "npm run prettier"
+    ],
+    "*.tsx": [
+      "npm run prettier"
+    ],
+    "*.js": [
+      "npm run prettier"
+    ],
+    "*.json": [
+      "npm run prettier"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "$(npm bin)/lint-staged"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^10.5.1",
+    "dotenv": "^6.0.0",
+    "husky": "^1.0.0-rc.8",
+    "lerna": "^3.6.0",
+    "lint-staged": "^7.1.3",
+    "prettier": "^1.13.4"
+  }
+}
