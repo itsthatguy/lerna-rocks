@@ -1,4 +1,4 @@
-# lerna-rocks starter-kit mono repo
+# lerna-rocks mono repo
 
 ## Requirements
 
