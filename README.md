@@ -3,23 +3,14 @@
 ## Requirements
 
 - node 9+
+- clone this repo
 
-## Setup
-
-```shell
-npm install
-$(npm bin)/lerna bootstrap
-```
-
-## Running
-```shell
-npm start
-```
 
 ## What NOT to do
 
 ```shell
 npm install
+$(npm bin)/lerna clean
 cd apps/app-1
 npm install is-sorted --save
 
@@ -36,4 +27,17 @@ $(npm bin)/lerna bootstrap
 npm start
 
 # Let me know, once you've done this, and understand
+```
+
+
+## Setup
+
+```shell
+npm install
+$(npm bin)/lerna bootstrap
+```
+
+## Running
+```shell
+npm start
 ```
