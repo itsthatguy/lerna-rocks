@@ -23,11 +23,18 @@ npm install
 $(npm bin)/lerna bootstrap
 cd apps/app-1
 npm install is-sorted --save
+rm -rf node_modules/
 
-cd ../../apps/app-1
-npm install in-array --save
+# This `npm install` should be all the further you need to go
+npm install
 
+#  but just incase...
 cd ../..
+npm start
+
+# still doesn't work
+# here's how to fix it
+$(npm bin)/lerna bootstrap
 npm start
 
 # Let me know, once you've done this, and understand
