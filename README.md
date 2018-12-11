@@ -9,11 +9,24 @@
 ```shell
 npm install
 $(npm bin)/lerna bootstrap
-cp .env.sample .env
-# go fill out .env (you will have to make your own discord application)
 ```
 
 ## Running
 ```shell
+npm start
+```
+
+## What NOT to do
+
+```shell
+npm install
+cd apps/app-1
+npm install # you shouldn't have to go further than this to figure out why
+
+# but just incase...
+cd ../..apps/app-1
+npm install
+
+cd ../..
 npm start
 ```
