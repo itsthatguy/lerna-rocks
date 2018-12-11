@@ -20,13 +20,15 @@ npm start
 
 ```shell
 npm install
+$(npm bin)/lerna bootstrap
 cd apps/app-1
-npm install # you shouldn't have to go further than this to figure out why
+npm install is-sorted --save
 
-# but just incase...
-cd ../..apps/app-1
-npm install
+cd ../../apps/app-1
+npm install in-array --save
 
 cd ../..
 npm start
+
+# Let me know, once you've done this, and understand
 ```
