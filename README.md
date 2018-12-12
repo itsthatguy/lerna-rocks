@@ -6,7 +6,7 @@
 - clone this repo
 
 
-## What NOT to do
+## Do the following steps (to learn what not to do)
 
 ```shell
 npm install
